@@ -1,0 +1,18 @@
+.botao-desc {
+    font-family: 'Poppins', sans-serif;
+    min-width: 100px;
+    background-color: #fa6668;
+    color: #ffff;
+    border-radius: 15px;
+    padding: 1px 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.div-botao {
+    display: flex;
+    justify-content: center;
+}

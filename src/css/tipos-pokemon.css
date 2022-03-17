@@ -1,0 +1,80 @@
+.cartao-pokemon .tipograma {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #00FF7F;
+    opacity: 0.7;
+    border-radius: 12px;
+    padding: 2px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}    
+
+.cartao-pokemon .tipoveneno {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #BA55D3;
+    opacity: 0.7;
+    border-radius: 12px;
+    padding: 2px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}    
+
+.cartao-pokemon .tipoeletrico {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #FFD700;
+    opacity: 0.7;
+    border-radius: 12px;
+    padding: 2px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cartao-pokemon .tipoagua {
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #0000FF;
+   opacity: 0.7;
+   border-radius: 12px;
+   padding: 2px 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cartao-pokemon .tipofogo {
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #FF4500;
+   opacity: 0.7;
+   border-radius: 12px;
+   padding: 2px 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cartao-pokemon .tipodragao {
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #48D1CC;
+   opacity: 0.7;
+   border-radius: 12px;
+   padding: 2px 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cartao-pokemon .tipofantasma {
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #708090;
+   opacity: 0.7;
+   border-radius: 12px;
+   padding: 2px 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cartao-pokemon .tipovoador {
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #DCDCDC;
+   opacity: 0.7;
+   border-radius: 12px;
+   padding: 2px 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ 

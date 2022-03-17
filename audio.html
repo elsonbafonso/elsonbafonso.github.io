@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+    <style>
+        .btnPlayAudio {
+            min-width: 200px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        
+        <button class="btnPlayAudio btn btn-success" data-audiourl="https://www.thesoundarchive.com/starwars/star-wars-theme-song.mp3">
+            Start Wars Theme
+        </button>
+        
+        <button class="btnPlayAudio btn btn-warning" data-audiourl="https://www.thesoundarchive.com/starwars/star-wars-cantina-song.mp3">
+            Cantina Song
+        </button>
+        
+        <button class="btnPlayAudio btn btn-danger" data-audiourl="https://www.thesoundarchive.com/starwars/imperial_march.mp3">
+            Imperial March
+        </button>
+
+        <button class="btn btn-primary" onclick="stopAll()" style="margin-top: 15px;">
+            Stop All
+        </button>
+
+    </div>
+
+    <script>
+        var listaAudios = [];
+
+        $(document).ready(function () {
+            //já que você quer fazer o carregamento antecipado de tudo, pode fazer isso quando 
+            //a página for carregada. Pode ser ruim fazer isso se forem muitos
+            //arquivos e muito grandes.
+
+            $('.btnPlayAudio').each(function (e) {
+                var url = $(this).attr('data-audiourl');
+                var audioPlay = new Audio(url);
+                audioPlay.preload = "auto";
+
+                var audioData = {
+                    'url': $(this).attr('data-audiourl'),
+                    'audioPlayObj': audioPlay
+                };
+
+                listaAudios.push(audioData);
+            });
+        });
+
+        $('.btnPlayAudio').click(function () {
+            var url = $(this).attr('data-audiourl');
+            for (var i = 0; i < listaAudios.length; i++) {
+                if (listaAudios[i].url == url) {
+                    var audio = listaAudios[i].audioPlayObj;                        
+                    audio.currentTime = 0;
+                    audio.volume = 1;
+                    audio.play();
+                    break;
+                }
+            }
+        });
+
+        function stopAll() {
+            for (var i = 0; i < listaAudios.length; i++) {
+                listaAudios[i].audioPlayObj.pause();
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
